@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP Verification</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <form method="POST" action="/home">
+        <h1>Enter Shoonya OTP</h1>
+        <label for="otp"></label>
+        <input type="text" id="otp" name="otp" required placeholder="OTP">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

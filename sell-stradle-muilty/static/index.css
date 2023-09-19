@@ -1,0 +1,81 @@
+/* Apply styles to the form container */
+form {
+    width: 300px; /* Set a specific width for the form */
+    margin: 0 auto; /* Center the form horizontally on the page */
+    padding: 20px; /* Add some padding to the form container */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    border-radius: 5px; /* Add rounded corners to the form */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Style the labels */
+  label {
+    font-weight: bold; /* Make labels bold */
+    display: block; /* Display labels on a new line */
+    margin-bottom: 5px; /* Add some space below labels */
+   
+  }
+  
+  /* Style the input fields */
+  input[type="text"] {
+    width: 90%; /* Make the text input take up the full width of the form */
+    padding: 10px; /* Add padding to the input field */
+    margin-bottom: 10px; /* Add space below the input field */
+    border: 1px solid #ccc; /* Add a border to the input field */
+    border-radius: 3px; /* Add rounded corners to the input field */
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #007bff; /* Set a background color */
+    color: #fff; /* Set text color to white */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove the button border */
+    border-radius: 3px; /* Add rounded corners to the button */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+  }
+  
+  /* Hover effect for the submit button */
+  form {
+    text-align: center;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+  }
+  
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 480px) {
+    form {
+      width: 90%; /* Make the form width 90% of the viewport width */
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    label {
+        font-size: 14px; /* Reduce label font size */
+      }
+    
+      input[type="text"] {
+        width: 100%;
+        padding: 8px; /* Reduce padding for input fields */
+        margin-bottom: 8px; /* Reduce margin bottom for input fields */
+        border-radius: 3px;
+      }
+    
+      input[type="submit"] {
+        padding: 8px 16px; /* Reduce padding for the submit button */
+      }
+    }

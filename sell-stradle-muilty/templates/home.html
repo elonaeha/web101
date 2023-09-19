@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+
+    <title>HOME</title>
+    <a href="http://127.0.0.1:5000/">Login</a>
+</head>
+<body>
+    <h1 id="user">User: {{name}}</h1>
+    <div class="container">
+        <h2>Order</h2>
+        <form method="POST" action="/form">
+            <label for="index">Index:</label>
+            <select id="indexType" name="optionType">
+                <option value="nifty">Nifty</option>
+                <option value="banknifty">BankNifty</option>
+                <option value="FINNIFTY">FinNifty</option>
+            </select>
+            <label for="strikeprice">Strike Price</label>
+            <div class="strike-price-container">
+                <input type="text" id="strike1" name="strike1" required placeholder="Leg 1">
+                
+                
+                <input type="text" id="strike2" name="strike2"  placeholder="Leg 2">
+            </div>
+
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" name="expiry" required>
+
+            <label for="qty">Quantity:</label>
+            <input type="number" id="qty" name="qty" required>
+
+            <label for="optionType">Option Type:</label>
+            <select id="optionType" name="optiontype">
+                <option value="CE">Call Option (CE)</option>
+                <option value="PE">Put Option (PE)</option>
+                <option value="STD">Straddle</option>
+            </select>
+
+            <label for="optionType">Order Type:</label>
+            <select id="orderType" name="ordertype">
+                <option value="S">SELL</option>
+                <option value="B">BUY</option>
+            </select>
+
+            <input type="submit" value="Place Order">
+        </form>
+    </div>
+    <h1>Positions</h1>
+
+</body>
+</html>

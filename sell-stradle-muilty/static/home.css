@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: block;
+  
+}
+#user{
+    margin: 30px;
+}
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-left: 4%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding-left: 25px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form element styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width:91%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 29px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff;
+}
+
+
+select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+    height: 50px;
+}
+
+select:focus {
+    border-color: #007bff;
+}
+/* Submit button style */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the "Strike Price" container */
+.strike-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Styles for the individual "Strike Price" inputs */
+.strike-price-container label {
+    flex: 1;
+}
+
+.strike-price-container input[type="text"] {
+    flex: 2;
+    margin-right: 18px;
+}
